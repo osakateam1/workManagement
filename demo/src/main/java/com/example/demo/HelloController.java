@@ -1,13 +1,16 @@
 package com.example.demo;
 import org.springframework.boot.autoconfigure.*;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-@RestController
-@EnableAutoConfiguration
+//@RestController
+//@EnableAutoConfiguration
+@Controller 
 public class HelloController {
 
-  @RequestMapping("/")
+  @GetMapping("/")
     String home() {
-        return "Hello World IwamotoBranch!";
+      return "login";
+       // return "Hello World";
     }
 }
